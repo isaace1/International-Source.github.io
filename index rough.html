@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet">
+        
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins",sans-serif; font-weight: 200; color: #787878}
+            h3 {font-family: "Poppins",sans-serif; font-weight: 400; font-stretch: ultra-expanded}
+        </style>
+    </head>
+        
+        <body style="background-color: #fff3b8"></body>
+
+    <body>
+    
+            <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    
+    <div id="main">
+         <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+        
+    </body>
+   
+    <body>
+
+        <h2 style= "font-size: 40px">International Source</h2>
+
+    </body>
+    
+  <!--
+        
+        <form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <button type="submit">Submit</button>
+  <button type="submit" formaction="/action_page2.php">Submit to another page</button>
+</form>
+        
+  -->
+
+    <body>
+        
+      <!--  <div class="row"> -->
+            
+            <div class="card1">
+    	       <img src="Images/acw%201%20fr.png" width="200%" height="200%" alt="Card Back">
+               <img src="Images/acw%201%20bk.png" width="200%" height="200%" class="img-top" alt="Card Front">
+            </div>
+    
+            <div class="card1">
+    	       <img src="Images/acw%202%20fr.png" width="200%" height="200%" alt="Card Back">
+               <img src="Images/acw%202%20bk.png" width="200%" height="200%" class="img-top" alt="Card Front">
+            </div>
+            
+            <div class="card1">
+    	       <img src="Images/acw%203%20fr.png" width="200%" height="200%" alt="Card Back">
+               <img src="Images/acw%203%20bk.png" width="200%" height="200%" class="img-top" alt="Card Front">
+            </div>
+                
+            <div class="card1">
+    	       <img src="Images/acw%204%20fr.png" width="200%" height="200%" alt="Card Back">
+               <img src="Images/acw%204%20bk.png" width="200%" height="200%" class="img-top" alt="Card Front">
+            </div>
+            
+            <div class="card1">
+    	       <img src="Images/acw%205%20fr.png" width="200%" height="200%" alt="Card Back">
+               <img src="Images/acw%205%20bk.png" width="200%" height="200%" class="img-top" alt="Card Front">
+            </div>
+            <!--
+            <div class="column">
+    
+                <img src="Images/syzygy.jpg" alt="Syzygy" onclick="myFunction(this);" width="75%" height="75%">
+    
+            </div>
+  
+            <div class="column">
+        
+                <img src="Images/saphfire.jpg" alt="Saphfire" onclick="myFunction(this);" width="75%" height="75%">
+
+            </div>
+        
+            <div class="column">
+    
+                <img src="Images/lacuna.jpg" alt="Lacuna" onclick="myFunction(this);" width="75%" height="75%">
+  
+            </div>
+
+            <div class="column">
+
+                <img src="Images/sakura.jpg" alt="Sakura" onclick="myFunction(this);" width="75%" height="75%">
+  
+            </div>
+
+        </div>
+
+        <div class="container">    The expanding image container 
+
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>   Close the image 
+
+            <img id="expandedImg" style="width:100%">   Expanded image 
+
+            <div id="imgtext"></div>    Image text  -->
+
+       <!-- </div> -->
+        
+        
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+                }
+        </script>
+    
+    </body>
+    
+    <body>
+    
+        <div class="row">
+        <div class="card">
+            
+            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+    
+        </div>
+        
+        <div class="card">
+            
+            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+    
+        </div>
+        
+        
+        <div class="card">
+            
+            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+    
+        </div>
+        </div>    
+    </body>
+    
+    <body>
+            
+             <div class="navbar">
+                  <a href="#home" class="active">Home</a>
+                  <a href="#news">Untitled</a>
+                  <a href = "mailto: isaac.eason08@gmail.com">Contact</a>
+            </div>
+
+            <p  class="ex1"> </p>
+    </body>
+</html>

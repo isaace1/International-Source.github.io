@@ -1,6 +1,14 @@
 t-rendering: optimizeLegibility;
 }
 
+/*--------------------*/
+/* Gradient Background*/
+/*--------------------*/
+
+body {
+  background: linear-gradient(180deg, #ffffff 50%, #000000 51%);
+}
+
 /*---------------------*/
 /* REUSABLE COMPONENTS */
 /*---------------------*/
@@ -568,7 +576,7 @@ div.sticky {
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin: 0px;
+  margin-left: -10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -601,4 +609,153 @@ div.sticky {
 p.ex1 {
   border: 1px; 
   padding-bottom: 2500px;
+}
+
+/*-----------*/
+/*Tab Gallery*/
+/*-----------*/
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/*--------------*/
+/* Product Card */
+/*--------------*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*------------*/
+/* Card Hover */
+/*------------*/
+
+.card1 {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+    }
+    .card1 .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card1:hover .img-top {
+        display: inline;
+    }.card1 {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+    }
+    .card1 .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card1:hover .img-top {
+        display: inline;
+    }
+
+/*-------------------*/
+/* Grid Pic Function */
+/*-------------------*/
+
+{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column1 img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
